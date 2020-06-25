@@ -4,7 +4,7 @@
 This is app was built to help check you XCUITest skills. Please clone the project and start building out your functional tests!
 
 ## Your Mission Should You Decide to Choose It
-1. Create XCUITest target
+1. Get app prepared for testing
 2. Build the app locally
 3. Create tests based off of app functionality
 
