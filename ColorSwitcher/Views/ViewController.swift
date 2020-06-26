@@ -34,19 +34,15 @@ class ViewController: UIViewController {
             return
         }
         
-        yellowButton.isSelected = false
-        blueButton.isSelected = false
-        greenButton.isSelected = false
-        orangeButton.isSelected = false
-        indigoButton.isSelected = false
-        purpleButton.isSelected = false
+        setButtonIsSelectedToFalse()
         
         sender.isSelected = true
         label.textColor = sender.changeBackGroundColor
         label.text = "The selected button color is \(buttonText)"
         
     }
-
+    
+    // MARK: - Helper functions
     private func setUpButtons() {
         yellowButton.setTitle(ButtonLabels.yellow, for: .normal)
         yellowButton.accessibilityIdentifier = "yellowButton"
@@ -67,6 +63,15 @@ class ViewController: UIViewController {
         purpleButton.setTitle(ButtonLabels.purple, for: .normal)
         purpleButton.accessibilityIdentifier = "pButton"
     }
-
+    
+    private func setButtonIsSelectedToFalse() {
+        yellowButton.isSelected = false
+        blueButton.isSelected = false
+        greenButton.isSelected = false
+        orangeButton.isSelected = false
+        indigoButton.isSelected = false
+        purpleButton.isSelected = false
+    }
+    
 }
 

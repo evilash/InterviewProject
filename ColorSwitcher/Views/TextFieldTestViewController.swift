@@ -22,6 +22,7 @@ class TextFieldTestViewController: UIViewController {
     @IBAction func submitPressed(_ sender: UIButton) {
         textField.resignFirstResponder()
         
+        // Artist of image is Alex Solis
         imageView.image = UIImage(named: "thanos")
     }
     
