@@ -1,7 +1,7 @@
 #  Color Switcher App
 
 ## Introduction
-This is app was built to help check you XCUITest skills. Please clone the project and start building out your functional tests!
+This is app was built to help check your XCUITest skills. Please clone the project and start building out your functional tests!
 
 ## Your Mission Should You Decide to Choose It
 1. Get app prepared for testing
