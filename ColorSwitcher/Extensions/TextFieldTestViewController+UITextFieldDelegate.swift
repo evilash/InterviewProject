@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension TextFieldTestViewController: UITextFieldDelegate {
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
         return true
