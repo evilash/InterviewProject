@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = ""
-        setUpButtons()
+        setUp()
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -37,13 +36,15 @@ class ViewController: UIViewController {
         setButtonIsSelectedToFalse()
         
         sender.isSelected = true
-        label.textColor = sender.changeBackGroundColor
+        label.textColor = sender.setTextColor
         label.text = "The selected button color is \(buttonText)"
         
     }
     
     // MARK: - Helper functions
-    private func setUpButtons() {
+    private func setUp() {
+        label.text = ""
+        
         yellowButton.setTitle(ButtonLabels.yellow, for: .normal)
         yellowButton.accessibilityIdentifier = "yellowButton"
         

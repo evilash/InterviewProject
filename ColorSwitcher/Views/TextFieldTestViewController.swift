@@ -18,7 +18,6 @@ class TextFieldTestViewController: UIViewController {
         setUp()
     }
     
-    
     @IBAction func submitPressed(_ sender: UIButton) {
         textField.resignFirstResponder()
         
@@ -26,6 +25,7 @@ class TextFieldTestViewController: UIViewController {
         imageView.image = UIImage(named: "thanos")
     }
     
+    // MARK: - Helper function
     private func setUp() {
         submitButton.isEnabled = false
         textField.delegate = self
