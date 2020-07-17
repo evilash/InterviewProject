@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
-    var changeBackGroundColor: UIColor {
+    var setTextColor: UIColor {
         switch self.titleLabel?.text {
         case ButtonLabels.yellow:
             return UIColor.systemYellow

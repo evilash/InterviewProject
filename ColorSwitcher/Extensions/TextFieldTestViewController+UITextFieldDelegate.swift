@@ -15,7 +15,6 @@ extension TextFieldTestViewController: UITextFieldDelegate {
         return true
     }
     
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
             if let text = textField.text {
                 submitButton.isEnabled = text.count >= 4 ? true : false
