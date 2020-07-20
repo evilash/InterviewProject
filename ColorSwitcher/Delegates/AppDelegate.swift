@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ColorSwitcher
 //
-//  Created by ms70285 on 6/24/20.
+//  Created by Matt Smith on 6/24/20.
 //
 
 import UIKit
