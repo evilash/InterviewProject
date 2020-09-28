@@ -11,6 +11,7 @@ class TextFieldTestViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var partThreeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class TextFieldTestViewController: UIViewController {
     // MARK: - Helper function
     private func setUp() {
         submitButton.isEnabled = false
+        partThreeButton.isHidden = true
         textField.delegate = self
         
         imageView.accessibilityIdentifier = "snap"
