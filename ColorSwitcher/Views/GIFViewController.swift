@@ -2,7 +2,7 @@
 //  GIFViewController.swift
 //  ColorSwitcher
 //
-//  Created by ms70285 on 9/28/20.
+//  Created by Matt Smith on 9/28/20.
 //
 
 import UIKit

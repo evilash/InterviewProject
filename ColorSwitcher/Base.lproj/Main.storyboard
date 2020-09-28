@@ -150,6 +150,7 @@
                     <navigationItem key="navigationItem" id="MsN-Aq-l8a"/>
                     <connections>
                         <outlet property="imageView" destination="EB2-VG-eCd" id="yXO-MO-7th"/>
+                        <outlet property="partThreeButton" destination="62i-qo-cZw" id="9hs-20-XDU"/>
                         <outlet property="submitButton" destination="lsj-2L-dpo" id="IHf-iL-dZ3"/>
                         <outlet property="textField" destination="Pgp-HS-bLJ" id="p5m-kV-z2U"/>
                     </connections>
