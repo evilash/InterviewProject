@@ -54,10 +54,17 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		4EA0505D24A50F3F00A1A423 /* Views */ = {
+		4E816BC4252262AB00FEE1A2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				4E694B9824A4898900601F40 /* ButtonLabels.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4EA0505D24A50F3F00A1A423 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				4EAE73E024A4660600A20BC9 /* ViewController.swift */,
 				4E694BA824A4FFD200601F40 /* TextFieldTestViewController.swift */,
 			);
@@ -95,6 +102,7 @@
 				4E1ADD0A24A5103200AF78CC /* Delegates */,
 				4EA0505E24A50F4F00A1A423 /* Extensions */,
 				4EA0505D24A50F3F00A1A423 /* Views */,
+				4E816BC4252262AB00FEE1A2 /* Lib */,
 				4EAE73E224A4660600A20BC9 /* Main.storyboard */,
 				4EAE73E524A4660700A20BC9 /* Assets.xcassets */,
 				4EAE73E724A4660700A20BC9 /* LaunchScreen.storyboard */,
