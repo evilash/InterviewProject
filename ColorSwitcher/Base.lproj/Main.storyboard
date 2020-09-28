@@ -135,6 +135,14 @@
                                 <rect key="frame" x="79" y="146" width="257" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62i-qo-cZw">
+                                <rect key="frame" x="166" y="503" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Part Three"/>
+                                <connections>
+                                    <segue destination="dZG-4u-QXh" kind="show" id="iBU-pI-14B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nLk-7J-xy8"/>
@@ -149,6 +157,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF8-rR-Jzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518.840579710145" y="49.553571428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x0y-aX-PKq">
+            <objects>
+                <viewController id="dZG-4u-QXh" customClass="GIFViewController" customModule="ColorSwitcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="am9-Fb-hAa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pd5-0D-hmt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XbZ-3v-JDS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9l5-YG-7eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="49"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ixs-Wh-epX">
