@@ -28,6 +28,7 @@ class TextFieldTestViewController: UIViewController {
     
     // MARK: - Helper function
     private func setUp() {
+        title = "Snap!"
         submitButton.isEnabled = false
         partThreeButton.isHidden = true
         textField.delegate = self

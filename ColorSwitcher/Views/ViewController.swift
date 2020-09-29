@@ -43,6 +43,7 @@ class ViewController: UIViewController {
     
     // MARK: - Helper functions
     private func setUp() {
+        title = "Color Switch"
         label.text = ""
         
         yellowButton.setTitle(ButtonLabels.yellow, for: .normal)
