@@ -25,11 +25,8 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else {
             let errorMessage = "The button is missing text"
-            let alert = UIAlertController(title: "ERROR", message: errorMessage, preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alert.addAction(action)
+            Alert.create(withTitle: "ERROR", message: errorMessage, vc: self)
             
-            present(alert, animated: true)
             return
         }
         
