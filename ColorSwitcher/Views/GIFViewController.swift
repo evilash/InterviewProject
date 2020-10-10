@@ -52,9 +52,11 @@ class GIFViewController: UIViewController {
             return
         }
         
-        DispatchQueue.main.async {
-            self.gifTitle.text = model.title
-            self.gifImageView.setGifFromURL(url)
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            
+            strongSelf.gifTitle.text = model.title
+            strongSelf.gifImageView.setGifFromURL(url)
         }
     }
 }
