@@ -45,7 +45,10 @@ class GIFViewController: UIViewController {
     }
     
     private func presentViews(using model: GIFModel) {
-        guard let url = URL(string: model.gifURLString) else {
+        let urlString = model.gifURLString
+        let title = model.title
+        
+        guard let url = URL(string: urlString) else {
             let errorMessage = "Sorry, but we are having issues getting your GIF"
             Alert.create(withTitle: "ERROR", message: errorMessage, vc: self)
             
@@ -55,7 +58,7 @@ class GIFViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             
-            strongSelf.gifTitle.text = model.title
+            strongSelf.gifTitle.text = title
             strongSelf.gifImageView.setGifFromURL(url)
         }
     }
