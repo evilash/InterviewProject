@@ -7,17 +7,12 @@
 
 import Foundation
 
-protocol GIFManagerDelegate {
-    func getGIFModel(title: String, urlString: String)
-}
-
 struct GIFManager {
-    var delegate: GIFManagerDelegate?
     
     private let apiKey = "0OZKMCWSOD4M"
     private let baseURL = "https://api.tenor.com/v1/search"
     
-    func fetchGIF(from query: String, completed: @escaping (Result<String, GIFError>) -> Void) {
+    func fetchGIF(from query: String, completed: @escaping (Result<GIFModel, GIFError>) -> Void) {
         let formattedQuery = query.replacingOccurrences(of: " ", with: "+")
         let urlString = "\(baseURL)?key=\(apiKey)&q=\(formattedQuery)&contentfilter=high&media_filter=minimal&limit=1"
         
@@ -34,8 +29,7 @@ struct GIFManager {
                         return
                     }
 
-                    completed(.success(model.title))
-                    self.delegate?.getGIFModel(title: model.title, urlString: model.gifURLString)
+                    completed(.success(model))
                 }
             }
             task.resume()
