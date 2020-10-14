@@ -49,8 +49,7 @@ class GIFViewController: UIViewController {
         let title = model.title
         
         guard let url = URL(string: urlString) else {
-            let errorMessage = "Sorry, but we are having issues getting your GIF"
-            Alert.create(withTitle: "ERROR", message: errorMessage, vc: self)
+            Alert.create(withTitle: "ERROR", message: GIFError.networkError.rawValue, vc: self)
             
             return
         }
