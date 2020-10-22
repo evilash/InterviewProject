@@ -11,10 +11,11 @@ struct GIFManager {
     
     private let apiKey = "0OZKMCWSOD4M"
     private let baseURL = "https://api.tenor.com/v1/search"
+    private let filters = "contentfilter=high&media_filter=minimal&limit=1"
     
     func fetchGIF(from query: String, completed: @escaping (Result<GIFModel, GIFError>) -> Void) {
         let formattedQuery = query.replacingOccurrences(of: " ", with: "+")
-        let urlString = "\(baseURL)?key=\(apiKey)&q=\(formattedQuery)&contentfilter=high&media_filter=minimal&limit=1"
+        let urlString = "\(baseURL)?key=\(apiKey)&q=\(formattedQuery)&\(filters)"
         
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
