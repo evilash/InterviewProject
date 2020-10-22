@@ -42,6 +42,8 @@ class GIFViewController: UIViewController {
     
     private func setup() {
         title = "Gif View"
+        
+        gifQueryTextField.placeholder = "Enter text"
     }
     
     private func presentViews(using model: GIFModel) {
