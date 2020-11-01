@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4EAE73D824A4660500A20BC9"
-               BuildableName = "ColorSwitcher.app"
-               BlueprintName = "ColorSwitcher"
-               ReferencedContainer = "container:ColorSwitcher.xcodeproj">
+               BuildableName = "InterviewProject.app"
+               BlueprintName = "InterviewProject"
+               ReferencedContainer = "container:InterviewProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4EAE73D824A4660500A20BC9"
-            BuildableName = "ColorSwitcher.app"
-            BlueprintName = "ColorSwitcher"
-            ReferencedContainer = "container:ColorSwitcher.xcodeproj">
+            BuildableName = "InterviewProject.app"
+            BlueprintName = "InterviewProject"
+            ReferencedContainer = "container:InterviewProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4EAE73D824A4660500A20BC9"
-            BuildableName = "ColorSwitcher.app"
-            BlueprintName = "ColorSwitcher"
-            ReferencedContainer = "container:ColorSwitcher.xcodeproj">
+            BuildableName = "InterviewProject.app"
+            BlueprintName = "InterviewProject"
+            ReferencedContainer = "container:InterviewProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
