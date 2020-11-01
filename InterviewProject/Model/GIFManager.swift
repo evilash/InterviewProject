@@ -13,7 +13,7 @@ struct GIFManager {
     private let baseURL = "https://api.tenor.com/v1/search"
     private let filters = "contentfilter=high&media_filter=minimal&limit=1"
     
-    func fetchGIF(from query: String, completed: @escaping (Result<GIFModel, GIFError>) -> Void) {
+    func fetchGIF(from query: String, completed: @escaping (Result<GIFModel, ProjectError>) -> Void) {
         let formattedQuery = query.replacingOccurrences(of: " ", with: "+")
         let urlString = "\(baseURL)?key=\(apiKey)&q=\(formattedQuery)&\(filters)"
         
@@ -26,7 +26,7 @@ struct GIFManager {
                 }
                 if let data = data {
                     guard let model = self.parse(jsonData: data) else {
-                        completed(.failure(.urlIsNil))
+                        completed(.failure(.gifURLIsNil))
                         return
                     }
 
