@@ -21,6 +21,7 @@
 		C93485E02522FC2400E79988 /* GIFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485DF2522FC2400E79988 /* GIFManager.swift */; };
 		C93485E2252305D500E79988 /* GIFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485E1252305D500E79988 /* GIFData.swift */; };
 		C98866E825302CC000E6D67D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98866E725302CC000E6D67D /* Alert.swift */; };
+		C98B109D254F4AC50010E4CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C98B109C254F4AC50010E4CD /* README.md */; };
 		C99495E52530185D00CCE2C4 /* GIFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99495E42530185D00CCE2C4 /* GIFError.swift */; };
 		C9E863E5252C3C0600995DDC /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E863E4252C3C0600995DDC /* error.gif */; };
 		C9F40C67252C17260061BA70 /* GIFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F40C66252C17260061BA70 /* GIFModel.swift */; };
@@ -45,6 +46,7 @@
 		C93485DF2522FC2400E79988 /* GIFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFManager.swift; sourceTree = "<group>"; };
 		C93485E1252305D500E79988 /* GIFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFData.swift; sourceTree = "<group>"; };
 		C98866E725302CC000E6D67D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C98B109C254F4AC50010E4CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C99495E42530185D00CCE2C4 /* GIFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFError.swift; sourceTree = "<group>"; };
 		C9E863E4252C3C0600995DDC /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
 		C9F40C66252C17260061BA70 /* GIFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFModel.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		4EAE73DB24A4660600A20BC9 /* ColorSwitcher */ = {
 			isa = PBXGroup;
 			children = (
+				C98B109C254F4AC50010E4CD /* README.md */,
 				C93485DE2522FC0800E79988 /* Model */,
 				4E1ADD0A24A5103200AF78CC /* Delegates */,
 				4EA0505E24A50F4F00A1A423 /* Extensions */,
@@ -241,6 +244,7 @@
 			files = (
 				4EAE73E924A4660700A20BC9 /* LaunchScreen.storyboard in Resources */,
 				4EAE73E624A4660700A20BC9 /* Assets.xcassets in Resources */,
+				C98B109D254F4AC50010E4CD /* README.md in Resources */,
 				4EAE73E424A4660600A20BC9 /* Main.storyboard in Resources */,
 				C9E863E5252C3C0600995DDC /* error.gif in Resources */,
 			);
