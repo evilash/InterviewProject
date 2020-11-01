@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 struct Alert {
-    static func create(withTitle title: String, message: String, vc: UIViewController) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    static func create(withTitle title: String, message: ProjectError, vc: UIViewController) {
+        let alert = UIAlertController(title: title, message: message.rawValue, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
         alert.addAction(action)
         
