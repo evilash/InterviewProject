@@ -18,6 +18,7 @@
 		4EAE73E624A4660700A20BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E524A4660700A20BC9 /* Assets.xcassets */; };
 		4EAE73E924A4660700A20BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E724A4660700A20BC9 /* LaunchScreen.storyboard */; };
 		4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC41186252268DF00F85D32 /* GIFViewController.swift */; };
+		53C78A337A4A4FCC3A1C696D /* Pods_InterviewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */; };
 		C93485E02522FC2400E79988 /* GIFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485DF2522FC2400E79988 /* GIFManager.swift */; };
 		C93485E2252305D500E79988 /* GIFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485E1252305D500E79988 /* GIFData.swift */; };
 		C98866E825302CC000E6D67D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98866E725302CC000E6D67D /* Alert.swift */; };
@@ -25,11 +26,11 @@
 		C99495E52530185D00CCE2C4 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99495E42530185D00CCE2C4 /* ProjectError.swift */; };
 		C9E863E5252C3C0600995DDC /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E863E4252C3C0600995DDC /* error.gif */; };
 		C9F40C67252C17260061BA70 /* GIFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F40C66252C17260061BA70 /* GIFModel.swift */; };
-		F85504D45818CA273FC8E230 /* Pods_ColorSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E91AC9892299CA3D7C1FAD7 /* Pods_ColorSwitcher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E91AC9892299CA3D7C1FAD7 /* Pods_ColorSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorSwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1ACB7DD925DBA3464044E5 /* Pods-InterviewProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewProject.release.xcconfig"; path = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.release.xcconfig"; sourceTree = "<group>"; };
+		4B11DDC55C6FD428418DA476 /* Pods-InterviewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewProject.debug.xcconfig"; path = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4E1ADD0824A50FE200AF78CC /* TextFieldTestViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldTestViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		4E694B9624A488BD00601F40 /* UIButton+changeBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+changeBackgroundColor.swift"; sourceTree = "<group>"; };
 		4E694B9824A4898900601F40 /* ButtonLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabels.swift; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		4EAE73E824A4660700A20BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EAE73EA24A4660700A20BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EC41186252268DF00F85D32 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93485DF2522FC2400E79988 /* GIFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFManager.swift; sourceTree = "<group>"; };
 		C93485E1252305D500E79988 /* GIFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFData.swift; sourceTree = "<group>"; };
 		C98866E725302CC000E6D67D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -50,8 +52,6 @@
 		C99495E42530185D00CCE2C4 /* ProjectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
 		C9E863E4252C3C0600995DDC /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
 		C9F40C66252C17260061BA70 /* GIFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFModel.swift; sourceTree = "<group>"; };
-		ED1D56ACFCB448C75DE1D9A6 /* Pods-ColorSwitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSwitcher.debug.xcconfig"; path = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher.debug.xcconfig"; sourceTree = "<group>"; };
-		FA3F94FCAB18978C20CE927F /* Pods-ColorSwitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSwitcher.release.xcconfig"; path = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85504D45818CA273FC8E230 /* Pods_ColorSwitcher.framework in Frameworks */,
+				53C78A337A4A4FCC3A1C696D /* Pods_InterviewProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 				4EAE73DB24A4660600A20BC9 /* InterviewProject */,
 				4EAE73DA24A4660600A20BC9 /* Products */,
 				F463AE27774E92D718462C09 /* Pods */,
-				AAFA7F173668282C198E4945 /* Frameworks */,
+				78444F926821BDBC7A8265DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,10 +139,10 @@
 			path = InterviewProject;
 			sourceTree = "<group>";
 		};
-		AAFA7F173668282C198E4945 /* Frameworks */ = {
+		78444F926821BDBC7A8265DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E91AC9892299CA3D7C1FAD7 /* Pods_ColorSwitcher.framework */,
+				6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,8 +177,8 @@
 		F463AE27774E92D718462C09 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED1D56ACFCB448C75DE1D9A6 /* Pods-ColorSwitcher.debug.xcconfig */,
-				FA3F94FCAB18978C20CE927F /* Pods-ColorSwitcher.release.xcconfig */,
+				4B11DDC55C6FD428418DA476 /* Pods-InterviewProject.debug.xcconfig */,
+				0C1ACB7DD925DBA3464044E5 /* Pods-InterviewProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,11 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EAE73ED24A4660700A20BC9 /* Build configuration list for PBXNativeTarget "InterviewProject" */;
 			buildPhases = (
-				D815107F63A153367CF6CB01 /* [CP] Check Pods Manifest.lock */,
+				CE31409316469B7D3354CC1C /* [CP] Check Pods Manifest.lock */,
 				4EAE73D524A4660500A20BC9 /* Sources */,
 				4EAE73D624A4660500A20BC9 /* Frameworks */,
 				4EAE73D724A4660500A20BC9 /* Resources */,
-				D87073363093A5B5BCBEA29F /* [CP] Embed Pods Frameworks */,
+				A82D5A42863ACE88BE6B6A08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,7 +253,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D815107F63A153367CF6CB01 /* [CP] Check Pods Manifest.lock */ = {
+		A82D5A42863ACE88BE6B6A08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewProject/Pods-InterviewProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewProject/Pods-InterviewProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterviewProject/Pods-InterviewProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE31409316469B7D3354CC1C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,28 +285,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ColorSwitcher-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InterviewProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D87073363093A5B5BCBEA29F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,7 +453,7 @@
 		};
 		4EAE73EE24A4660700A20BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED1D56ACFCB448C75DE1D9A6 /* Pods-ColorSwitcher.debug.xcconfig */;
+			baseConfigurationReference = 4B11DDC55C6FD428418DA476 /* Pods-InterviewProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,7 +471,7 @@
 		};
 		4EAE73EF24A4660700A20BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA3F94FCAB18978C20CE927F /* Pods-ColorSwitcher.release.xcconfig */;
+			baseConfigurationReference = 0C1ACB7DD925DBA3464044E5 /* Pods-InterviewProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
