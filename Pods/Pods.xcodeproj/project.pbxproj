@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,15 +12,15 @@
 		5E15F97881DAA1FCA5F8927D0EA61967 /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B18E9F9037366B6B83C9CC458DD1A5F /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		677F3D8BEE5A2B1459168DC62EB16EB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7054EEB1CB3DD574C77BB2A5818FD46B /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8AAC9130031AE3BF8316F661060B80 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		952EE2580228D7074D1BDDB7D762BCBF /* Pods-ColorSwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A4287D562B48B03B4EE79BE4EFCCA9 /* Pods-ColorSwitcher-dummy.m */; };
+		77CEDECD7A828CE705FD27A6727868AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		90E6F606AB273DF0E565368CF605B375 /* Pods-InterviewProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE84E2D91F795B4ED66A87679CEDA948 /* Pods-InterviewProject-dummy.m */; };
+		A0A11072F521524DD8AEA5C2E43115EA /* Pods-InterviewProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F62CDDA00FDAB7587F076BA1F08BB9 /* Pods-InterviewProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9E70330524A80D4D04AF50A838666F5 /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6C5ACAFBC8B9203E4B922C20A18BE /* SwiftyGif-dummy.m */; };
 		AF6FF1855E227D3C93BB642FFB68EBB6 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EE1B474ED6E866345B93E05B12D7CF /* UIImageView+SwiftyGif.swift */; };
-		BE21CB9A47F638FE8D94819476928739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C6C572DCBCF4AF0250B725C53C271BE7 /* Pods-ColorSwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68992A8F18D7E280CCF4B850D6215D94 /* Pods-ColorSwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		039218E5F47C9DD5D93A04FD7B683D73 /* PBXContainerItemProxy */ = {
+		0A1E58C63A92F86B19C37CF2619F953E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -30,30 +30,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13544751DFD121236A7C03995753B28B /* Pods-ColorSwitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorSwitcher.debug.xcconfig"; sourceTree = "<group>"; };
-		2B5FD9666CB3B601080103AA328EC7F5 /* Pods-ColorSwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ColorSwitcher.modulemap"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38F62CDDA00FDAB7587F076BA1F08BB9 /* Pods-InterviewProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InterviewProject-umbrella.h"; sourceTree = "<group>"; };
 		45C6ED66D1189FB9DA4F262CF82DCFFF /* SwiftyGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.debug.xcconfig; sourceTree = "<group>"; };
 		46EE1B474ED6E866345B93E05B12D7CF /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 		4D0D0CA02DCEBDA0347A2D1A6F13EBC3 /* SwiftyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyGif-Info.plist"; sourceTree = "<group>"; };
+		56361868A6893E7832B044432ABF167F /* Pods-InterviewProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InterviewProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		56A6ADAB04796E5C0AAC480EFAE08D0B /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
 		5B18E9F9037366B6B83C9CC458DD1A5F /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
-		68992A8F18D7E280CCF4B850D6215D94 /* Pods-ColorSwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorSwitcher-umbrella.h"; sourceTree = "<group>"; };
+		6C6480D28248752B876919B630A3B8C0 /* Pods-InterviewProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InterviewProject.modulemap"; sourceTree = "<group>"; };
 		756F933DEA8A333C4B05B12CAE6A4561 /* SwiftyGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.release.xcconfig; sourceTree = "<group>"; };
 		7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C3BF3984FD1AA1BE90E795EC895FAA /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
-		880C32F8140D52E931C3E9F896ACC0FB /* Pods-ColorSwitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorSwitcher.release.xcconfig"; sourceTree = "<group>"; };
+		88CADE01A52126E86F9352B86CF2BF1F /* Pods_InterviewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InterviewProject.framework; path = "Pods-InterviewProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E869F1303037363048D6C7D933A3E41 /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
-		8F9DCCCD76717E8C15C03C7FBF24B575 /* Pods_ColorSwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ColorSwitcher.framework; path = "Pods-ColorSwitcher.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		92ABF3209A6887B1967CA72C3DC31398 /* Pods-ColorSwitcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorSwitcher-Info.plist"; sourceTree = "<group>"; };
 		9A8AAC9130031AE3BF8316F661060B80 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A079FA46EA0A40ED89A375A058DC826D /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
-		A0A4287D562B48B03B4EE79BE4EFCCA9 /* Pods-ColorSwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorSwitcher-dummy.m"; sourceTree = "<group>"; };
 		A5C6C5ACAFBC8B9203E4B922C20A18BE /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
-		B7873250B241C0A99639CF94E5C14510 /* Pods-ColorSwitcher-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorSwitcher-frameworks.sh"; sourceTree = "<group>"; };
-		E493B76F09CF0D9E58DE1EDDEB695590 /* Pods-ColorSwitcher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColorSwitcher-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FA377625CC448D2D7395668E7D77BA87 /* Pods-ColorSwitcher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorSwitcher-acknowledgements.plist"; sourceTree = "<group>"; };
+		ABD05C6B8BFF60223F98099206E88378 /* Pods-InterviewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InterviewProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A3810FC1F7763520DE77C962451252 /* Pods-InterviewProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InterviewProject.release.xcconfig"; sourceTree = "<group>"; };
+		DA595889328ACF3723D6CD28DFFD04AC /* Pods-InterviewProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InterviewProject-frameworks.sh"; sourceTree = "<group>"; };
+		DE84E2D91F795B4ED66A87679CEDA948 /* Pods-InterviewProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InterviewProject-dummy.m"; sourceTree = "<group>"; };
+		E560F0975B80CDA844833B0BEA48B858 /* Pods-InterviewProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InterviewProject-Info.plist"; sourceTree = "<group>"; };
+		E5D27D6E6EB645311BC7AF084285832F /* Pods-InterviewProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InterviewProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +65,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81B675EDBD50310FE8A918E1BB02979C /* Frameworks */ = {
+		3E56AB416F062AD3C40CEFE773663ACA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE21CB9A47F638FE8D94819476928739 /* Foundation.framework in Frameworks */,
+				77CEDECD7A828CE705FD27A6727868AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +91,40 @@
 			path = "../Target Support Files/SwiftyGif";
 			sourceTree = "<group>";
 		};
+		321A473697CEFC38790B4AF0AB942B09 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C0459F91E7A7B7FB24CE82C48ADC53D /* Pods-InterviewProject */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5C0459F91E7A7B7FB24CE82C48ADC53D /* Pods-InterviewProject */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480D28248752B876919B630A3B8C0 /* Pods-InterviewProject.modulemap */,
+				E5D27D6E6EB645311BC7AF084285832F /* Pods-InterviewProject-acknowledgements.markdown */,
+				56361868A6893E7832B044432ABF167F /* Pods-InterviewProject-acknowledgements.plist */,
+				DE84E2D91F795B4ED66A87679CEDA948 /* Pods-InterviewProject-dummy.m */,
+				DA595889328ACF3723D6CD28DFFD04AC /* Pods-InterviewProject-frameworks.sh */,
+				E560F0975B80CDA844833B0BEA48B858 /* Pods-InterviewProject-Info.plist */,
+				38F62CDDA00FDAB7587F076BA1F08BB9 /* Pods-InterviewProject-umbrella.h */,
+				ABD05C6B8BFF60223F98099206E88378 /* Pods-InterviewProject.debug.xcconfig */,
+				C7A3810FC1F7763520DE77C962451252 /* Pods-InterviewProject.release.xcconfig */,
+			);
+			name = "Pods-InterviewProject";
+			path = "Target Support Files/Pods-InterviewProject";
+			sourceTree = "<group>";
+		};
+		AAE4292616206D133264005D4B7ADE86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88CADE01A52126E86F9352B86CF2BF1F /* Pods_InterviewProject.framework */,
+				7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,31 +133,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C3EA1EBF3A9D045C45B7C90C0217FE9D /* Pods-ColorSwitcher */ = {
-			isa = PBXGroup;
-			children = (
-				2B5FD9666CB3B601080103AA328EC7F5 /* Pods-ColorSwitcher.modulemap */,
-				E493B76F09CF0D9E58DE1EDDEB695590 /* Pods-ColorSwitcher-acknowledgements.markdown */,
-				FA377625CC448D2D7395668E7D77BA87 /* Pods-ColorSwitcher-acknowledgements.plist */,
-				A0A4287D562B48B03B4EE79BE4EFCCA9 /* Pods-ColorSwitcher-dummy.m */,
-				B7873250B241C0A99639CF94E5C14510 /* Pods-ColorSwitcher-frameworks.sh */,
-				92ABF3209A6887B1967CA72C3DC31398 /* Pods-ColorSwitcher-Info.plist */,
-				68992A8F18D7E280CCF4B850D6215D94 /* Pods-ColorSwitcher-umbrella.h */,
-				13544751DFD121236A7C03995753B28B /* Pods-ColorSwitcher.debug.xcconfig */,
-				880C32F8140D52E931C3E9F896ACC0FB /* Pods-ColorSwitcher.release.xcconfig */,
-			);
-			name = "Pods-ColorSwitcher";
-			path = "Target Support Files/Pods-ColorSwitcher";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D475238C46FDC4C20924A71287983F44 /* Pods */,
-				E4652F02D28793A95922A73DA3D27E8E /* Products */,
-				EF67032F4D67B6A9CF03CDC535543CD6 /* Targets Support Files */,
+				AAE4292616206D133264005D4B7ADE86 /* Products */,
+				321A473697CEFC38790B4AF0AB942B09 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,23 +173,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E4652F02D28793A95922A73DA3D27E8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8F9DCCCD76717E8C15C03C7FBF24B575 /* Pods_ColorSwitcher.framework */,
-				7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EF67032F4D67B6A9CF03CDC535543CD6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C3EA1EBF3A9D045C45B7C90C0217FE9D /* Pods-ColorSwitcher */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -185,11 +185,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFE1758FB0D6C6A762434BE999D6C164 /* Headers */ = {
+		BB5A8B5882DE0E2FA1FB2BB7E219F10D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C572DCBCF4AF0250B725C53C271BE7 /* Pods-ColorSwitcher-umbrella.h in Headers */,
+				A0A11072F521524DD8AEA5C2E43115EA /* Pods-InterviewProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,23 +214,23 @@
 			productReference = 7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		37FEB567DC431975CDB4FCC8C4C5C50A /* Pods-ColorSwitcher */ = {
+		7831E88EB25F22BEC2BB22E1FDAD4E09 /* Pods-InterviewProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6955894E789B503E4944086EC32D023 /* Build configuration list for PBXNativeTarget "Pods-ColorSwitcher" */;
+			buildConfigurationList = ED45C6E142F88DF6A5807A1489C0ED0D /* Build configuration list for PBXNativeTarget "Pods-InterviewProject" */;
 			buildPhases = (
-				CFE1758FB0D6C6A762434BE999D6C164 /* Headers */,
-				863705C4A235F3A606B01EE22A6606E1 /* Sources */,
-				81B675EDBD50310FE8A918E1BB02979C /* Frameworks */,
-				0936682A9763DE1EF2FFE473164D2549 /* Resources */,
+				BB5A8B5882DE0E2FA1FB2BB7E219F10D /* Headers */,
+				D893D28D3AF9874BC3F258F7A92DC7CF /* Sources */,
+				3E56AB416F062AD3C40CEFE773663ACA /* Frameworks */,
+				87ABAE3A33693F1E711D128DA761044F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EBA1594EE8D63033FA6D92F6D33383B2 /* PBXTargetDependency */,
+				DFBB3DB5DD0F1C68ECC5BD8D85951056 /* PBXTargetDependency */,
 			);
-			name = "Pods-ColorSwitcher";
-			productName = "Pods-ColorSwitcher";
-			productReference = 8F9DCCCD76717E8C15C03C7FBF24B575 /* Pods_ColorSwitcher.framework */;
+			name = "Pods-InterviewProject";
+			productName = "Pods-InterviewProject";
+			productReference = 88CADE01A52126E86F9352B86CF2BF1F /* Pods_InterviewProject.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +243,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -251,11 +251,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E4652F02D28793A95922A73DA3D27E8E /* Products */;
+			productRefGroup = AAE4292616206D133264005D4B7ADE86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37FEB567DC431975CDB4FCC8C4C5C50A /* Pods-ColorSwitcher */,
+				7831E88EB25F22BEC2BB22E1FDAD4E09 /* Pods-InterviewProject */,
 				15AEBAFA43912F898FC2E1A73025C946 /* SwiftyGif */,
 			);
 		};
@@ -269,7 +269,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0936682A9763DE1EF2FFE473164D2549 /* Resources */ = {
+		87ABAE3A33693F1E711D128DA761044F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,22 +290,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		863705C4A235F3A606B01EE22A6606E1 /* Sources */ = {
+		D893D28D3AF9874BC3F258F7A92DC7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				952EE2580228D7074D1BDDB7D762BCBF /* Pods-ColorSwitcher-dummy.m in Sources */,
+				90E6F606AB273DF0E565368CF605B375 /* Pods-InterviewProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EBA1594EE8D63033FA6D92F6D33383B2 /* PBXTargetDependency */ = {
+		DFBB3DB5DD0F1C68ECC5BD8D85951056 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyGif;
 			target = 15AEBAFA43912F898FC2E1A73025C946 /* SwiftyGif */;
-			targetProxy = 039218E5F47C9DD5D93A04FD7B683D73 /* PBXContainerItemProxy */;
+			targetProxy = 0A1E58C63A92F86B19C37CF2619F953E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +405,45 @@
 			};
 			name = Debug;
 		};
+		322B2F61C406426D149E450F0A38285F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A3810FC1F7763520DE77C962451252 /* Pods-InterviewProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3B0CC028200E9BD46F310CC0EE59E26D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 756F933DEA8A333C4B05B12CAE6A4561 /* SwiftyGif.release.xcconfig */;
@@ -441,9 +480,9 @@
 			};
 			name = Release;
 		};
-		3F8AA9413762864E43494AACFB8C9DB0 /* Release */ = {
+		974F3C0DDD38A9571D9DA2FE4E5806B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 880C32F8140D52E931C3E9F896ACC0FB /* Pods-ColorSwitcher.release.xcconfig */;
+			baseConfigurationReference = ABD05C6B8BFF60223F98099206E88378 /* Pods-InterviewProject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -456,7 +495,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,46 +504,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8BF93BA556A019FBEE5CF04D672A0BF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13544751DFD121236A7C03995753B28B /* Pods-ColorSwitcher.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ColorSwitcher/Pods-ColorSwitcher.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -603,11 +603,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6955894E789B503E4944086EC32D023 /* Build configuration list for PBXNativeTarget "Pods-ColorSwitcher" */ = {
+		ED45C6E142F88DF6A5807A1489C0ED0D /* Build configuration list for PBXNativeTarget "Pods-InterviewProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BF93BA556A019FBEE5CF04D672A0BF4 /* Debug */,
-				3F8AA9413762864E43494AACFB8C9DB0 /* Release */,
+				974F3C0DDD38A9571D9DA2FE4E5806B4 /* Debug */,
+				322B2F61C406426D149E450F0A38285F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

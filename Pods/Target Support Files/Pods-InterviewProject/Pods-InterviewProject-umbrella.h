@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ColorSwitcherVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ColorSwitcherVersionString[];
+FOUNDATION_EXPORT double Pods_InterviewProjectVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_InterviewProjectVersionString[];
 
