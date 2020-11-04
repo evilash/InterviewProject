@@ -1,5 +1,6 @@
 
 *.xcbkptlist
-ColorSwitcher/Lib/.DS_Store
+.DS_Store
+InterviewProject/Lib/.DS_Store
 Pods/Pods.xcodeproj/xcuserdata/*
-ColorSwitcher.xcworkspace/xcuserdata/*
+InterviewProject.xcworkspace/xcuserdata/*
