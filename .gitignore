@@ -3,4 +3,5 @@
 .DS_Store
 InterviewProject/Lib/.DS_Store
 Pods/Pods.xcodeproj/xcuserdata/*
+InterviewProject.xcodeproj/xcuserdata/*
 InterviewProject.xcworkspace/xcuserdata/*
