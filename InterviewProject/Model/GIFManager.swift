@@ -42,9 +42,9 @@ struct GIFManager {
         
         let decoder = JSONDecoder()
         let decodedData = try? decoder.decode(GIFData.self, from: data)
-        let title = decodedData?.results.first?.title ?? "Sorry, but we are having technical Difficulties"
-        let gifURLString = decodedData?.results.first?.media.first?.gif.url ?? gifErrorPath
+        let title = decodedData?.results.first?.title ?? ProjectError.technicalDifficulties.rawValue
+        let urlString = decodedData?.results.first?.media.first?.gif.url ?? gifErrorPath
         
-        return GIFModel(title: title, gifURLString: gifURLString)
+        return GIFModel(title: title, urlString: urlString)
     }
 }

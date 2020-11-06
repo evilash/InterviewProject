@@ -47,7 +47,7 @@ class GIFViewController: UIViewController {
     }
     
     private func presentViews(using model: GIFModel) {
-        let urlString = model.gifURLString
+        let urlString = model.urlString
         let title = model.title
         
         guard let url = URL(string: urlString) else {

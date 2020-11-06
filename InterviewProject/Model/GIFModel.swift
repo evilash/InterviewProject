@@ -9,5 +9,5 @@ import Foundation
 
 struct GIFModel {
     let title: String
-    let gifURLString: String
+    let urlString: String
 }

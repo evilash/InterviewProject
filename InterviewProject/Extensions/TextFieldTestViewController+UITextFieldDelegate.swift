@@ -17,7 +17,7 @@ extension TextFieldTestViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return false }
-        let buttonState = text.count >= 4 ? true : false
+        let buttonState = text.count >= 4
         
         submitButton.isEnabled = buttonState
         partThreeButton.isHidden = !buttonState
