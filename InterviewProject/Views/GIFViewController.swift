@@ -34,7 +34,7 @@ class GIFViewController: UIViewController {
                 strongSelf.presentViews(using: model)
             case .failure(let error):
                 DispatchQueue.main.async {
-                    Alert.create(withTitle: "Uh Oh!", message: error, vc: strongSelf)
+                    Alert.create(message: error, vc: strongSelf)
                 }
             }
         }
@@ -47,11 +47,8 @@ class GIFViewController: UIViewController {
     }
     
     private func presentViews(using model: GIFModel) {
-        let urlString = model.urlString
-        let title = model.title
-        
-        guard let url = URL(string: urlString) else {
-            Alert.create(withTitle: "ERROR", message: .networkError, vc: self)
+        guard let url = URL(string: model.urlString) else {
+            Alert.create(message: .networkError, vc: self)
             
             return
         }
@@ -59,7 +56,7 @@ class GIFViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             
-            strongSelf.gifTitle.text = title
+            strongSelf.gifTitle.text = model.title
             strongSelf.gifImageView.setGifFromURL(url)
         }
     }

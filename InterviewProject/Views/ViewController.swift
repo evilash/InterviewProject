@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else {
-            Alert.create(withTitle: "ERROR", message: .buttonTitleIsNil, vc: self)
+            Alert.create(message: .buttonTitleIsNil, vc: self)
             
             return
         }
@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         sender.isSelected = true
         label.textColor = sender.setTextColor
         label.text = "The selected button color is \(buttonText)"
-        
     }
     
     // MARK: - Helper functions
