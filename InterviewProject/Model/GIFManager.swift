@@ -25,7 +25,7 @@ struct GIFManager {
                     print(error)
                 }
                 if let data = data {
-                    guard let model = self.parse(jsonData: data) else {
+                    guard let model = self.parse(data) else {
                         completed(.failure(.gifURLIsNil))
                         return
                     }
@@ -37,7 +37,7 @@ struct GIFManager {
         }
     }
     
-    private func parse(jsonData data: Data) -> GIFModel? {
+    private func parse(_ data: Data) -> GIFModel? {
         guard let gifErrorPath = Bundle.main.path(forResource: "error", ofType: "gif") else { return nil }
         
         let decoder = JSONDecoder()
