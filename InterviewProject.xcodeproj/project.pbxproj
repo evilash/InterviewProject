@@ -20,7 +20,7 @@
 		4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC41186252268DF00F85D32 /* GIFViewController.swift */; };
 		53C78A337A4A4FCC3A1C696D /* Pods_InterviewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */; };
 		C93485E02522FC2400E79988 /* GIFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485DF2522FC2400E79988 /* GIFManager.swift */; };
-		C93485E2252305D500E79988 /* GIFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485E1252305D500E79988 /* GIFData.swift */; };
+		C93485E2252305D500E79988 /* TenorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485E1252305D500E79988 /* TenorResponse.swift */; };
 		C98866E825302CC000E6D67D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98866E725302CC000E6D67D /* Alert.swift */; };
 		C98B109D254F4AC50010E4CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C98B109C254F4AC50010E4CD /* README.md */; };
 		C99495E52530185D00CCE2C4 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99495E42530185D00CCE2C4 /* ProjectError.swift */; };
@@ -46,7 +46,7 @@
 		4EC41186252268DF00F85D32 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93485DF2522FC2400E79988 /* GIFManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFManager.swift; sourceTree = "<group>"; };
-		C93485E1252305D500E79988 /* GIFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFData.swift; sourceTree = "<group>"; };
+		C93485E1252305D500E79988 /* TenorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenorResponse.swift; sourceTree = "<group>"; };
 		C98866E725302CC000E6D67D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C98B109C254F4AC50010E4CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C99495E42530185D00CCE2C4 /* ProjectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C93485DF2522FC2400E79988 /* GIFManager.swift */,
-				C93485E1252305D500E79988 /* GIFData.swift */,
+				C93485E1252305D500E79988 /* TenorResponse.swift */,
 				C9F40C66252C17260061BA70 /* GIFModel.swift */,
 			);
 			path = Model;
@@ -301,7 +301,7 @@
 			files = (
 				4E694B9924A4898900601F40 /* ButtonLabels.swift in Sources */,
 				4EAE73E124A4660600A20BC9 /* ViewController.swift in Sources */,
-				C93485E2252305D500E79988 /* GIFData.swift in Sources */,
+				C93485E2252305D500E79988 /* TenorResponse.swift in Sources */,
 				C93485E02522FC2400E79988 /* GIFManager.swift in Sources */,
 				4EAE73DD24A4660600A20BC9 /* AppDelegate.swift in Sources */,
 				4E1ADD0924A50FE200AF78CC /* TextFieldTestViewController+UITextFieldDelegate.swift in Sources */,
