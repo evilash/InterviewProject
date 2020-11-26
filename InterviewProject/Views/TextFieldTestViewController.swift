@@ -15,7 +15,6 @@ class TextFieldTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUp()
     }
     
@@ -32,7 +31,6 @@ class TextFieldTestViewController: UIViewController {
         submitButton.isEnabled = false
         partThreeButton.isHidden = true
         textField.delegate = self
-        
         imageView.accessibilityIdentifier = "snap"
         textField.accessibilityIdentifier = "textField"
         submitButton.accessibilityIdentifier = "submitButton"

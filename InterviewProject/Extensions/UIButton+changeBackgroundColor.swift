@@ -10,7 +10,7 @@ import UIKit
 
 extension UIButton {
     var setTextColor: UIColor {
-        switch self.titleLabel?.text {
+        switch titleLabel?.text {
         case ButtonLabels.yellow:
             return UIColor.systemYellow
         case ButtonLabels.blue:
