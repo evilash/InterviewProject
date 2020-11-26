@@ -1,5 +1,5 @@
 //
-//  GIFData.swift
+//  TenorResponse.swift
 //  ColorSwitcher
 //
 //  Created by Matt M Smith on 9/28/20.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GIFData: Decodable {
+struct TenorResponse: Decodable {
     let results: [Results]
 }
 

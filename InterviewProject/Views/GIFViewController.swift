@@ -15,7 +15,6 @@ class GIFViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
     }
     
@@ -40,16 +39,15 @@ class GIFViewController: UIViewController {
         }
     }
     
+    //MARK: - Helper Functions
     private func setup() {
         title = "Gif View"
-        
         gifQueryTextField.placeholder = "Enter text"
     }
     
     private func presentViews(using model: GIFModel) {
         guard let url = URL(string: model.urlString) else {
             Alert.create(withMessage: .networkError, vc: self)
-            
             return
         }
         

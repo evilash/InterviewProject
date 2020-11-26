@@ -23,6 +23,7 @@ struct GIFManager {
                 if let error = error {
                     completed(.failure(.networkError))
                     print(error)
+                    return
                 }
                 if let data = data {
                     guard let model = self.parse(data) else {
@@ -41,7 +42,7 @@ struct GIFManager {
         guard let gifErrorPath = Bundle.main.path(forResource: "error", ofType: "gif") else { return nil }
         
         let decoder = JSONDecoder()
-        let decodedData = try? decoder.decode(GIFData.self, from: data)
+        let decodedData = try? decoder.decode(TenorResponse.self, from: data)
         let title = decodedData?.results.first?.title ?? ProjectError.technicalDifficulties.rawValue
         let urlString = decodedData?.results.first?.media.first?.gif.url ?? gifErrorPath
         
