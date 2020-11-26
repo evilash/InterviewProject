@@ -18,14 +18,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUp()
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.titleLabel?.text else {
             Alert.create(withMessage: .buttonTitleIsNil, vc: self)
-            
             return
         }
         
