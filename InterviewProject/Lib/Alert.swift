@@ -5,7 +5,6 @@
 //  Created by Matt M Smith on 10/8/20.
 //
 
-import Foundation
 import UIKit
 
 struct Alert {
