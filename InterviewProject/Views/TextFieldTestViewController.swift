@@ -16,6 +16,7 @@ class TextFieldTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        createDismissKeyboardTapGesture()
     }
     
     @IBAction func submitPressed(_ sender: UIButton) {
