@@ -39,24 +39,12 @@ class ViewController: UIViewController {
         title = "Color Switch"
         label.text = ""
         
-        yellowButton.setTitle(ButtonLabels.yellow, for: .normal)
-        yellowButton.accessibilityIdentifier = "yellowButton"
-        
-        blueButton.setTitle(ButtonLabels.blue, for: .normal)
-        blueButton.isAccessibilityElement = false
-        blueButton.accessibilityIdentifier = "blueButton"
-        
-        greenButton.setTitle(ButtonLabels.green, for: .normal)
-        greenButton.accessibilityIdentifier = "greenButton"
-        
-        orangeButton.setTitle(ButtonLabels.orange, for: .normal)
-        orangeButton.isAccessibilityElement = false
-        
-        indigoButton.setTitle(ButtonLabels.indigo, for: .normal)
-        indigoButton.accessibilityIdentifier = "indigoButton"
-        
-        purpleButton.setTitle(ButtonLabels.purple, for: .normal)
-        purpleButton.accessibilityIdentifier = "pButton"
+        yellowButton.configureButton(buttonTitle: ButtonLabels.yellow, accessibilityId: "yellowButton")
+        blueButton.configureButton(buttonTitle: ButtonLabels.blue, accessibilityElement: false, accessibilityId: "blueButton")
+        greenButton.configureButton(buttonTitle: ButtonLabels.green, accessibilityId: "greenButton")
+        orangeButton.configureButton(buttonTitle: ButtonLabels.orange, accessibilityElement: false, accessibilityId: nil)
+        indigoButton.configureButton(buttonTitle: ButtonLabels.indigo, accessibilityId: "indigoButton")
+        purpleButton.configureButton(buttonTitle: ButtonLabels.purple, accessibilityId: "pButton")
     }
     
     private func setButtonIsSelectedToFalse() {
@@ -69,4 +57,3 @@ class ViewController: UIViewController {
     }
     
 }
-
