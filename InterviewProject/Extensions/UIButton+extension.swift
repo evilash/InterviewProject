@@ -1,5 +1,5 @@
 //
-//  UIButton+changeBackGroundColor.swift
+//  UIButton+extension.swift.swift
 //  ColorSwitcher
 //
 //  Created by Matt Smith on 6/25/20.
@@ -23,5 +23,11 @@ extension UIButton {
         default:
             return UIColor.systemPurple
         }
+    }
+    
+    func configureButton(buttonTitle: String, accessibilityElement: Bool = true, accessibilityId: String?) {
+        setTitle(buttonTitle, for: .normal)
+        isAccessibilityElement = accessibilityElement
+        accessibilityIdentifier = accessibilityId ?? nil
     }
 }
