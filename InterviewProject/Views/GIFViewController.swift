@@ -16,7 +16,7 @@ class GIFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        createDismissKeyboardTapGesture()
+        dismissKeyboardTapGesture()
     }
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
