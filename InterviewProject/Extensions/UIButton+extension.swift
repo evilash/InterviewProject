@@ -25,9 +25,9 @@ extension UIButton {
         }
     }
     
-    func configureButton(buttonTitle: String, accessibilityElement: Bool = true, accessibilityId: String?) {
+    func configureButton(buttonTitle: String, accessibilityElement: Bool = true, accessibilityId: String? = nil) {
         setTitle(buttonTitle, for: .normal)
         isAccessibilityElement = accessibilityElement
-        accessibilityIdentifier = accessibilityId ?? nil
+        accessibilityIdentifier = accessibilityId
     }
 }

@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         yellowButton.configureButton(buttonTitle: ButtonLabels.yellow, accessibilityId: "yellowButton")
         blueButton.configureButton(buttonTitle: ButtonLabels.blue, accessibilityElement: false, accessibilityId: "blueButton")
         greenButton.configureButton(buttonTitle: ButtonLabels.green, accessibilityId: "greenButton")
-        orangeButton.configureButton(buttonTitle: ButtonLabels.orange, accessibilityElement: false, accessibilityId: nil)
+        orangeButton.configureButton(buttonTitle: ButtonLabels.orange, accessibilityElement: false)
         indigoButton.configureButton(buttonTitle: ButtonLabels.indigo, accessibilityId: "indigoButton")
         purpleButton.configureButton(buttonTitle: ButtonLabels.purple, accessibilityId: "pButton")
     }
