@@ -27,7 +27,7 @@ struct GIFManager {
                 }
                 if let data = data {
                     guard let model = self.parse(data) else {
-                        completed(.failure(.gifURLIsNil))
+                        completed(.failure(.gifUrlIsNil))
                         return
                     }
 
