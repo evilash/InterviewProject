@@ -8,9 +8,9 @@
 import Foundation
 
 struct Tenor {
-    static let apiKey = "0OZKMCWSOD4M"
-    static let baseURL = "https://api.tenor.com/v1/search"
-    static let filters = "contentfilter=high&media_filter=minimal&limit=1"
+    private static let apiKey = "0OZKMCWSOD4M"
+    private static let baseURL = "https://api.tenor.com/v1/search"
+    private static let filters = "contentfilter=high&media_filter=minimal&limit=1"
     
     static func url(with query: String) -> URL? {
         let formattedQuery = query.replacingOccurrences(of: " ", with: "+")
