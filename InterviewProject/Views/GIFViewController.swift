@@ -24,10 +24,10 @@ class GIFViewController: UIViewController {
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
         let queryString = gifQueryTextField.text ?? "fun"
-        let gif = GIFManager.fetchGif(from: queryString)
-        clearOutSubscriptions()
         
-        gif.receive(on: DispatchQueue.main)
+        clearOutSubscriptions()
+        GIFManager.fetchGif(from: queryString)
+        .receive(on: DispatchQueue.main)
             .sink {
                 switch $0 {
                 case .finished: break
