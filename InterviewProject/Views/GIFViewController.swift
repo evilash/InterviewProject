@@ -5,10 +5,13 @@
 //  Created by Matt Smith on 9/28/20.
 //
 
-import UIKit
+import Combine
 import SwiftyGif
+import UIKit
 
 class GIFViewController: UIViewController {
+    private var subscriptions = Set<AnyCancellable>()
+    
     @IBOutlet weak var gifTitle: UILabel!
     @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var gifQueryTextField: UITextField!
@@ -20,24 +23,21 @@ class GIFViewController: UIViewController {
     }
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
-        let manager = GIFManager()
         let queryString = gifQueryTextField.text ?? "fun"
         
-        manager.fetchGIF(from: queryString) { [weak self] result in
-            guard let strongSelf = self else { return }
-            
-            switch result {
-            case .success(let model):
-                let title = model.title.isEmpty ? "an empty string" : "\"\(model.title)\""
-                
-                print("The GIF title is \(title)")
-                strongSelf.presentViews(using: model)
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    Alert.create(withMessage: error, vc: strongSelf)
+        clearOutSubscriptions()
+        GIFManager.fetchGif(from: queryString)
+        .receive(on: DispatchQueue.main)
+            .sink {
+                switch $0 {
+                case .finished: break
+                case .failure(let error):
+                    Alert.create(withMessage: error, vc: self)
                 }
+            } receiveValue: { model in
+                self.displayViews(using: model)
             }
-        }
+            .store(in: &subscriptions)
     }
     
     //MARK: - Helper Functions
@@ -46,17 +46,18 @@ class GIFViewController: UIViewController {
         gifQueryTextField.placeholder = "Enter text"
     }
     
-    private func presentViews(using model: GIFModel) {
+    private func clearOutSubscriptions() {
+        subscriptions = []
+        subscriptions.forEach { $0.cancel() }
+    }
+    
+    private func displayViews(using model: GIFModel) {
         guard let url = URL(string: model.urlString) else {
             Alert.create(withMessage: .networkError, vc: self)
             return
         }
         
-        DispatchQueue.main.async { [weak self] in
-            guard let strongSelf = self else { return }
-            
-            strongSelf.gifTitle.text = model.title
-            strongSelf.gifImageView.setGifFromURL(url)
-        }
+        self.gifTitle.text = model.title
+        self.gifImageView.setGifFromURL(url)
     }
 }

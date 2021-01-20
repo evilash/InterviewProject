@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0D43BE25B7A14C00482CA1 /* Tenor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D43BD25B7A14C00482CA1 /* Tenor.swift */; };
 		4E1ADD0924A50FE200AF78CC /* TextFieldTestViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1ADD0824A50FE200AF78CC /* TextFieldTestViewController+UITextFieldDelegate.swift */; };
 		4E694B9724A488BD00601F40 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E694B9624A488BD00601F40 /* UIButton+extension.swift */; };
 		4E694B9924A4898900601F40 /* ButtonLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E694B9824A4898900601F40 /* ButtonLabels.swift */; };
@@ -25,13 +26,13 @@
 		C98866E825302CC000E6D67D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98866E725302CC000E6D67D /* Alert.swift */; };
 		C98B109D254F4AC50010E4CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C98B109C254F4AC50010E4CD /* README.md */; };
 		C99495E52530185D00CCE2C4 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99495E42530185D00CCE2C4 /* ProjectError.swift */; };
-		C9E863E5252C3C0600995DDC /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E863E4252C3C0600995DDC /* error.gif */; };
 		C9F40C67252C17260061BA70 /* GIFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F40C66252C17260061BA70 /* GIFModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C1ACB7DD925DBA3464044E5 /* Pods-InterviewProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewProject.release.xcconfig"; path = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.release.xcconfig"; sourceTree = "<group>"; };
 		4B11DDC55C6FD428418DA476 /* Pods-InterviewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewProject.debug.xcconfig"; path = "Target Support Files/Pods-InterviewProject/Pods-InterviewProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4E0D43BD25B7A14C00482CA1 /* Tenor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenor.swift; sourceTree = "<group>"; };
 		4E1ADD0824A50FE200AF78CC /* TextFieldTestViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldTestViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		4E694B9624A488BD00601F40 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
 		4E694B9824A4898900601F40 /* ButtonLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabels.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		C98866E725302CC000E6D67D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C98B109C254F4AC50010E4CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C99495E42530185D00CCE2C4 /* ProjectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
-		C9E863E4252C3C0600995DDC /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
 		C9F40C66252C17260061BA70 /* GIFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,6 @@
 		4E816BC4252262AB00FEE1A2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C9E863E3252C3A6A00995DDC /* GIF */,
 				C99495E62530186D00CCE2C4 /* Enums */,
 				C98866E725302CC000E6D67D /* Alert.swift */,
 			);
@@ -130,6 +129,7 @@
 			children = (
 				C98B109C254F4AC50010E4CD /* README.md */,
 				C93485DE2522FC0800E79988 /* Model */,
+				C9366FED25B7CFA7001EEDE4 /* Network */,
 				4E1ADD0A24A5103200AF78CC /* Delegates */,
 				4EA0505E24A50F4F00A1A423 /* Extensions */,
 				4EA0505D24A50F3F00A1A423 /* Views */,
@@ -153,11 +153,19 @@
 		C93485DE2522FC0800E79988 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C93485DF2522FC2400E79988 /* GIFManager.swift */,
 				C93485E1252305D500E79988 /* TenorResponse.swift */,
 				C9F40C66252C17260061BA70 /* GIFModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C9366FED25B7CFA7001EEDE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C93485DF2522FC2400E79988 /* GIFManager.swift */,
+				4E0D43BD25B7A14C00482CA1 /* Tenor.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C99495E62530186D00CCE2C4 /* Enums */ = {
@@ -167,14 +175,6 @@
 				C99495E42530185D00CCE2C4 /* ProjectError.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		C9E863E3252C3A6A00995DDC /* GIF */ = {
-			isa = PBXGroup;
-			children = (
-				C9E863E4252C3C0600995DDC /* error.gif */,
-			);
-			path = GIF;
 			sourceTree = "<group>";
 		};
 		F463AE27774E92D718462C09 /* Pods */ = {
@@ -249,7 +249,6 @@
 				4EAE73E624A4660700A20BC9 /* Assets.xcassets in Resources */,
 				C98B109D254F4AC50010E4CD /* README.md in Resources */,
 				4EAE73E424A4660600A20BC9 /* Main.storyboard in Resources */,
-				C9E863E5252C3C0600995DDC /* error.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +311,7 @@
 				C98866E825302CC000E6D67D /* Alert.swift in Sources */,
 				C99495E52530185D00CCE2C4 /* ProjectError.swift in Sources */,
 				C9F40C67252C17260061BA70 /* GIFModel.swift in Sources */,
+				4E0D43BE25B7A14C00482CA1 /* Tenor.swift in Sources */,
 				4EAE73DF24A4660600A20BC9 /* SceneDelegate.swift in Sources */,
 				4E694BA924A4FFD200601F40 /* TextFieldTestViewController.swift in Sources */,
 				4E694B9724A488BD00601F40 /* UIButton+extension.swift in Sources */,
