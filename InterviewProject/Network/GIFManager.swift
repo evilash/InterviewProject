@@ -9,15 +9,8 @@ import Combine
 import Foundation
 
 struct GIFManager {
-    static private let apiKey = Tenor.apiKey
-    static private let baseURL = Tenor.baseURL
-    static private let filters = Tenor.filters
-    
     static func fetchGif(from query: String) -> AnyPublisher<GIFModel, ProjectError> {
-        let formattedQuery = query.replacingOccurrences(of: " ", with: "+")
-        let urlString = "\(baseURL)?key=\(apiKey)&q=\(formattedQuery)&\(filters)"
-        
-        guard let url = URL(string: urlString) else {
+        guard let url = Tenor.url(with: query) else {
             return Fail(error: ProjectError.gifUrlIsNil)
                 .eraseToAnyPublisher()
         }
