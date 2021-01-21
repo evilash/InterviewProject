@@ -8,8 +8,8 @@
 import Combine
 import Foundation
 
-struct GIFManager {
-    static func fetchGif(from query: String) -> AnyPublisher<GIFModel, ProjectError> {
+struct NetworkManager {
+    static func fetchGif(from query: String) -> AnyPublisher<TenorResponse, ProjectError> {
         guard let url = Tenor.url(with: query) else {
             return Fail(error: ProjectError.gifUrlIsNil)
                 .eraseToAnyPublisher()
@@ -24,12 +24,6 @@ struct GIFManager {
                 return response.data
             }
             .decode(type: TenorResponse.self, decoder: JSONDecoder())
-            .tryMap { tenor in
-                guard let results = tenor.results.first, let media = results.media.first else {
-                    throw ProjectError.technicalDifficulties
-                }
-                return GIFModel(title: results.title, urlString: media.gif.url)
-            }
             .mapError { ProjectError.map($0) }
             .eraseToAnyPublisher()
     }
