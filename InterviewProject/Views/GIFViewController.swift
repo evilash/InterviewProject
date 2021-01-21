@@ -23,19 +23,25 @@ class GIFViewController: UIViewController {
     }
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
-        let queryString = gifQueryTextField.text ?? "fun"
+        let query = gifQueryTextField.text ?? "fun"
+        let gif = GIFModel(using: query)
+        let title = gif.title
+        let url = gif.url
         
         clearOutSubscriptions()
-        GIFManager.fetchGif(from: queryString)
-        .receive(on: DispatchQueue.main)
-            .sink {
-                switch $0 {
+        title.zip(url)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
                 case .finished: break
                 case .failure(let error):
                     Alert.create(withMessage: error, vc: self)
                 }
-            } receiveValue: { model in
-                self.displayViews(using: model)
+            } receiveValue: { (title, url) in
+                let printTitle = title.isEmpty ? "an empty string" : "'\(title)'"
+
+                print("The title is \(printTitle)")
+                self.displayViews(using: title, url: url)
             }
             .store(in: &subscriptions)
     }
@@ -51,13 +57,8 @@ class GIFViewController: UIViewController {
         subscriptions.forEach { $0.cancel() }
     }
     
-    private func displayViews(using model: GIFModel) {
-        guard let url = URL(string: model.urlString) else {
-            Alert.create(withMessage: .networkError, vc: self)
-            return
-        }
-        
-        self.gifTitle.text = model.title
+    private func displayViews(using title: String, url: URL) {
+        self.gifTitle.text = title
         self.gifImageView.setGifFromURL(url)
     }
 }
