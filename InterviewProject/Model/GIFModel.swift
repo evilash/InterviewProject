@@ -9,13 +9,16 @@ import Combine
 import Foundation
 
 struct GIFModel {
-    let tenorResponse: AnyPublisher<TenorResponse, ProjectError>
+    typealias GIFTitle = AnyPublisher<String, ProjectError>
+    typealias GIFURL = AnyPublisher<URL, ProjectError>
+    
+    let tenorResponse: NetworkManager.TenorResponsePublisher
     
     init(using query: String) {
         tenorResponse = NetworkManager.fetchGif(from: query)
     }
     
-    var title: AnyPublisher<String, ProjectError> {
+    var title: GIFTitle {
         tenorResponse
             .tryMap { response in
                 guard let result = response.results.first else {
@@ -28,7 +31,7 @@ struct GIFModel {
             .eraseToAnyPublisher()
     }
     
-    var url: AnyPublisher<URL, ProjectError> {
+    var url: GIFURL {
         tenorResponse
             .tryMap { response in
                 guard let media = response.results.first?.media.first,
