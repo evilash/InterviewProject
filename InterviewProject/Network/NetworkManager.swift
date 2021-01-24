@@ -9,7 +9,9 @@ import Combine
 import Foundation
 
 struct NetworkManager {
-    static func fetchGif(from query: String) -> AnyPublisher<TenorResponse, ProjectError> {
+    typealias TenorResponsePublisher = AnyPublisher<TenorResponse, ProjectError>
+    
+    static func fetchGif(from query: String) -> TenorResponsePublisher {
         guard let url = Tenor.url(with: query) else {
             return Fail(error: ProjectError.gifUrlIsNil)
                 .eraseToAnyPublisher()
