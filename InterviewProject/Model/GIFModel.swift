@@ -2,7 +2,7 @@
 //  DownloadManager.swift
 //  InterviewProject
 //
-//  Created by ms70285 on 1/20/21.
+//  Created by Matt Smith on 1/20/21.
 //
 
 import Combine
