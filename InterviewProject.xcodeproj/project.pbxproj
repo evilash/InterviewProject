@@ -13,6 +13,7 @@
 		4E694B9724A488BD00601F40 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E694B9624A488BD00601F40 /* UIButton+extension.swift */; };
 		4E694B9924A4898900601F40 /* ButtonLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E694B9824A4898900601F40 /* ButtonLabels.swift */; };
 		4E694BA924A4FFD200601F40 /* TextFieldTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E694BA824A4FFD200601F40 /* TextFieldTestViewController.swift */; };
+		4EA189B725C87EAD00A5CD1B /* TenorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA189B625C87EAD00A5CD1B /* TenorManager.swift */; };
 		4EAE73DD24A4660600A20BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE73DC24A4660600A20BC9 /* AppDelegate.swift */; };
 		4EAE73DF24A4660600A20BC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE73DE24A4660600A20BC9 /* SceneDelegate.swift */; };
 		4EAE73E124A4660600A20BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE73E024A4660600A20BC9 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		4E694B9624A488BD00601F40 /* UIButton+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
 		4E694B9824A4898900601F40 /* ButtonLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabels.swift; sourceTree = "<group>"; };
 		4E694BA824A4FFD200601F40 /* TextFieldTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTestViewController.swift; sourceTree = "<group>"; };
+		4EA189B625C87EAD00A5CD1B /* TenorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenorManager.swift; sourceTree = "<group>"; };
 		4EAE73D924A4660600A20BC9 /* InterviewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE73DC24A4660600A20BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EAE73DE24A4660600A20BC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				C93485DF2522FC2400E79988 /* NetworkManager.swift */,
 				4E0D43BD25B7A14C00482CA1 /* Tenor.swift */,
+				4EA189B625C87EAD00A5CD1B /* TenorManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA189B725C87EAD00A5CD1B /* TenorManager.swift in Sources */,
 				4E694B9924A4898900601F40 /* ButtonLabels.swift in Sources */,
 				4EAE73E124A4660600A20BC9 /* ViewController.swift in Sources */,
 				C95EB5E8257E0181009ED293 /* UIViewController+extension.swift in Sources */,

@@ -8,7 +8,7 @@
 import UIKit
 
 struct Alert {
-    static func create(withTitle title: ProjectError = ProjectError.title, withMessage message: ProjectError, vc: UIViewController) {
+    static func display(withTitle title: ProjectError = ProjectError.title, withMessage message: ProjectError, vc: UIViewController) {
         let alert = UIAlertController(title: title.rawValue, message: message.rawValue, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
         alert.addAction(action)

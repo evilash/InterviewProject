@@ -24,24 +24,16 @@ class GIFViewController: UIViewController {
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
         let query = gifQueryTextField.text ?? "fun"
-        let gif = GIFModel(using: query)
-        let title = gif.title
-        let url = gif.url
+        let manager = TenorManager(with: query)
         
+        manager.fetchModel()
         clearOutSubscriptions()
-        title.zip(url)
+        
+        manager.objectWillChange
             .receive(on: DispatchQueue.main)
-            .sink { completion in
-                switch completion {
-                case .finished: break
-                case .failure(let error):
-                    Alert.create(withMessage: error, vc: self)
-                }
-            } receiveValue: { (title, url) in
-                let printTitle = title.isEmpty ? "an empty string" : "'\(title)'"
-
-                print("The title is \(printTitle)")
-                self.displayViews(using: title, url: url)
+            .sink {
+                self.displayViews(using: manager.model)
+                self.log(title: manager.model.title)
             }
             .store(in: &subscriptions)
     }
@@ -57,8 +49,18 @@ class GIFViewController: UIViewController {
         subscriptions.forEach { $0.cancel() }
     }
     
-    private func displayViews(using title: String, url: URL) {
-        self.gifTitle.text = title
-        self.gifImageView.setGifFromURL(url)
+    private func displayViews(using model: GIFModel) {
+        if let url = URL(string: model.url), !model.url.isEmpty {
+            self.gifTitle.text = model.title
+            self.gifImageView.setGifFromURL(url)
+        } else {
+            Alert.display(withMessage: .other, vc: self)
+        }
+    }
+    
+    private func log(title text: String) {
+        let result = text.isEmpty ? "The title is empty" : "the title is '\(text)'"
+        
+        print(result)
     }
 }
