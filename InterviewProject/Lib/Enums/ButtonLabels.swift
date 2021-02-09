@@ -7,11 +7,12 @@
 
 import UIKit
 
-enum ButtonLabels {
-    static let yellow = "Yellow"
-    static let blue = "Blue"
-    static let green = "Green"
-    static let orange = "Orange"
-    static let indigo = "Indigo"
-    static let purple = "Purple"
+enum ButtonLabels: String, Identifiable {
+    case yellow
+    case blue
+    case green
+    case orange
+    case indigo
+    case purple
+    var id: String { self.rawValue }
 }
