@@ -7,3 +7,5 @@ InterviewProject.xcodeproj/xcuserdata/
 InterviewProject.xcworkspace/xcuserdata/*
 InterviewProject.xcodeproj/project.xcworkspace/xcuserdata/
 .idea/
+
+InterviewProject/Network/Tenor.swift
