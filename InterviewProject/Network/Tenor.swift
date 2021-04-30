@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TenorSetup {
-    private static let apiKey = "ADD API KEY HERE"
+struct Tenor {
+    private static let apiKey = "0OZKMCWSOD4M"
     private static let baseURL = "https://api.tenor.com/v1/search"
     private static let filters = "contentfilter=high&media_filter=minimal&limit=1"
     
