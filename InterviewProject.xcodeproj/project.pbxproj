@@ -19,6 +19,7 @@
 		4EAE73E424A4660600A20BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E224A4660600A20BC9 /* Main.storyboard */; };
 		4EAE73E624A4660700A20BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E524A4660700A20BC9 /* Assets.xcassets */; };
 		4EAE73E924A4660700A20BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E724A4660700A20BC9 /* LaunchScreen.storyboard */; };
+		4EB4EA8D264AF5DF004A54D9 /* TenorSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB4EA8C264AF5DF004A54D9 /* TenorSetup.swift */; };
 		4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC41186252268DF00F85D32 /* GIFViewController.swift */; };
 		53C78A337A4A4FCC3A1C696D /* Pods_InterviewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */; };
 		C90955D0263B34A4002D8A92 /* Tenor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90955CF263B34A4002D8A92 /* Tenor.swift */; };
@@ -47,6 +48,7 @@
 		4EAE73E524A4660700A20BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EAE73E824A4660700A20BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EAE73EA24A4660700A20BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB4EA8C264AF5DF004A54D9 /* TenorSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenorSetup.swift; sourceTree = "<group>"; };
 		4EC41186252268DF00F85D32 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90955CF263B34A4002D8A92 /* Tenor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenor.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				C93485DF2522FC2400E79988 /* NetworkManager.swift */,
 				4EA189B625C87EAD00A5CD1B /* TenorManager.swift */,
 				C90955CF263B34A4002D8A92 /* Tenor.swift */,
+				4EB4EA8C264AF5DF004A54D9 /* TenorSetup.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				4EAE73DF24A4660600A20BC9 /* SceneDelegate.swift in Sources */,
 				4E694BA924A4FFD200601F40 /* TextFieldTestViewController.swift in Sources */,
 				C90955D0263B34A4002D8A92 /* Tenor.swift in Sources */,
+				4EB4EA8D264AF5DF004A54D9 /* TenorSetup.swift in Sources */,
 				4E694B9724A488BD00601F40 /* UIButton+extension.swift in Sources */,
 				4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */,
 			);
