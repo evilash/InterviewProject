@@ -19,4 +19,4 @@ You'll notice the app has three views. Please write tests for all three of them.
 ## Bonus Points
 1. Fix the warnings displayed in Xcode
 2. Can't interact with a control? Can you figure out why?
-3. is it possible to add unit tests? If yes; do you want to try adding them? 
+3. Is it possible to add unit tests? If yes; do you want to try adding them? 
