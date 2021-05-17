@@ -23,7 +23,7 @@ class GIFViewController: UIViewController {
     }
     
     @IBAction func gifMeTapped(_ sender: UIButton) {
-        let query = gifQueryTextField.text ?? "fun"
+        let query = gifQueryTextField.text ?? Constants.TextField.defaultQuery
         let manager = TenorManager(with: query)
         
         manager.fetchModel()
@@ -40,8 +40,8 @@ class GIFViewController: UIViewController {
     
     //MARK: - Helper Functions
     private func setup() {
-        title = "Gif View"
-        gifQueryTextField.placeholder = "Enter text"
+        title = Constants.NavTitle.gifViewController
+        gifQueryTextField.placeholder = Constants.TextField.placeholder
     }
     
     private func clearOutSubscriptions() {
@@ -51,11 +51,9 @@ class GIFViewController: UIViewController {
     
     private func displayViews(using model: GIFModel) {
         guard let url = URL(string: model.url), !model.url.isEmpty else {
-            let techDifficulties = "Technical Difficulties!"
-            
-            gifTitle.text = techDifficulties
-            gifImageView.image = UIImage(named: "standby")
-            log(title: techDifficulties)
+            gifTitle.text = Constants.GifTitle.techDifficulties
+            gifImageView.image = UIImage(named: Constants.Image.standy)
+            log(title: Constants.GifTitle.techDifficulties)
             return
         }
         
@@ -64,7 +62,7 @@ class GIFViewController: UIViewController {
     }
     
     private func log(title text: String) {
-        let result = text.isEmpty ? "The title is empty" : "the title is '\(text)'"
+        let result = text.isEmpty ? Constants.GifTitle.emptyTitle : "the title is \"\(text)\""
         
         print(result)
     }
