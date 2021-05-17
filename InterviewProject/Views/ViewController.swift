@@ -36,15 +36,15 @@ class ViewController: UIViewController {
     
     // MARK: - Helper functions
     private func setUp() {
-        title = "Color Switch"
-        label.text = ""
+        title = Constants.NavTitle.viewController
+        label.text = Constants.Strings.empty
         
-        yellowButton.configureButton(buttonTitle: .yellow, accessibilityId: "yellowButton")
+        yellowButton.configureButton(buttonTitle: .yellow, accessibilityId: Constants.AccessibilityId.yellowButton)
         blueButton.configureButton(buttonTitle: .blue, accessibilityElement: false, accessibilityId: "blueButton")
-        greenButton.configureButton(buttonTitle: .green, accessibilityId: "greenButton")
+        greenButton.configureButton(buttonTitle: .green, accessibilityId: Constants.AccessibilityId.greenButton)
         orangeButton.configureButton(buttonTitle: .orange, accessibilityElement: false)
-        indigoButton.configureButton(buttonTitle: .indigo, accessibilityId: "indigoButton")
-        purpleButton.configureButton(buttonTitle: .purple, accessibilityId: "pButton")
+        indigoButton.configureButton(buttonTitle: .indigo, accessibilityId: Constants.AccessibilityId.indigoButton)
+        purpleButton.configureButton(buttonTitle: .purple, accessibilityId: Constants.AccessibilityId.purpleButton)
     }
     
     private func setButtonIsSelectedToFalse() {

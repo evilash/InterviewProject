@@ -23,18 +23,18 @@ class TextFieldTestViewController: UIViewController {
         textField.resignFirstResponder()
         
         // Artist of image is Alex Solis
-        imageView.image = UIImage(named: "thanos")
+        imageView.image = UIImage(named: Constants.Image.thanos)
     }
     
     // MARK: - Helper function
     private func setUp() {
-        title = "Snap!"
+        title = Constants.NavTitle.textFieldTest
         submitButton.isEnabled = false
         partThreeButton.isHidden = true
         textField.delegate = self
-        imageView.accessibilityIdentifier = "snap"
-        textField.accessibilityIdentifier = "textField"
-        submitButton.accessibilityIdentifier = "submitButton"
+        imageView.accessibilityIdentifier = Constants.AccessibilityId.snap
+        textField.accessibilityIdentifier = Constants.AccessibilityId.textField
+        submitButton.accessibilityIdentifier = Constants.AccessibilityId.submitButton
     }
     
 }
