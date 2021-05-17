@@ -50,12 +50,17 @@ class GIFViewController: UIViewController {
     }
     
     private func displayViews(using model: GIFModel) {
-        if let url = URL(string: model.url), !model.url.isEmpty {
-            self.gifTitle.text = model.title
-            self.gifImageView.setGifFromURL(url)
-        } else {
-            Alert.display(withMessage: .other, vc: self)
+        guard let url = URL(string: model.url), !model.url.isEmpty else {
+            let techDifficulties = "Technical Difficulties!"
+            
+            gifTitle.text = techDifficulties
+            gifImageView.image = UIImage(named: "standby")
+            log(title: techDifficulties)
+            return
         }
+        
+        gifTitle.text = model.title
+        gifImageView.setGifFromURL(url)
     }
     
     private func log(title text: String) {
