@@ -16,8 +16,8 @@ class GIFViewController: UIViewController {
     @IBOutlet weak var gifImageView: UIImageView!
     @IBOutlet weak var gifQueryTextField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setup()
         dismissKeyboardTapGesture()
     }
