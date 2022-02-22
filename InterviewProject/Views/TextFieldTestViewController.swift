@@ -32,6 +32,7 @@ class TextFieldTestViewController: UIViewController {
         submitButton.isEnabled = false
         partThreeButton.isHidden = true
         textField.delegate = self
+        textField.backgroundColor = .setBackgroundColor
         imageView.accessibilityIdentifier = Constants.AccessibilityId.snap
         textField.accessibilityIdentifier = Constants.AccessibilityId.textField
         submitButton.accessibilityIdentifier = Constants.AccessibilityId.submitButton
