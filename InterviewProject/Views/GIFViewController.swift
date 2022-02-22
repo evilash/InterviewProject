@@ -41,6 +41,7 @@ class GIFViewController: UIViewController {
     //MARK: - Helper Functions
     private func setup() {
         title = Constants.NavTitle.gifViewController
+        gifQueryTextField.backgroundColor = .setBackgroundColor
         gifQueryTextField.placeholder = Constants.TextField.placeholder
     }
     
