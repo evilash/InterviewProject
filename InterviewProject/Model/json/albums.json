@@ -1,0 +1,34 @@
+{
+    "albums": [
+        {
+            "name": "Welcome to My Nightmare",
+            "imageName": "nightmare",
+            "artist": "Alice Cooper",
+            "description": "Welcome to My Nightmare is an album by Alice Cooper, released in March 1975. It is Alice Cooper's first solo album, and his only album for the Atlantic Records label. Welcome to My Nightmare is a concept album. Played in sequence, the songs form a journey through the nightmares of a child named Steven."
+        },
+        {
+            "name": "Back in Black",
+            "imageName": "black",
+            "artist": "AC/DC",
+            "description": "Back in Black is the seventh studio album by Australian rock band AC/DC. It was released on 25 July 1980 by Albert Productions and Atlantic Records. It is the band's first album to feature lead singer Brian Johnson, following the death of previous lead singer Bon Scott."
+        },
+        {
+            "name": "Powerslave",
+            "imageName": "power-slave",
+            "artist": "Iron Maiden",
+            "description": "Powerslave is the fifth studio album by the English heavy metal band Iron Maiden, released on 3 September 1984 through EMI Records in Europe and its sister label Capitol Records in North America. It was re-released by Sanctuary and Columbia Records in the United States in 2002."
+        },
+        {
+            "name": "Master of Puppets",
+            "imageName": "master",
+            "artist": "Metallica",
+            "description": "Master of Puppets is the third studio album by the American heavy metal band Metallica, released on March 3, 1986, by Elektra Records. Recorded in Denmark at Sweet Silence Studios with producer Flemming Rasmussen, it was the band's last album to feature bassist Cliff Burton, who died in a bus accident in Sweden during the album's promotional tour."
+        },
+        {
+            "name": "Among the Living",
+            "imageName": "among",
+            "artist": "Anthrax",
+            "description": "Among the Living is the third studio album by American thrash metal band Anthrax. It was released on March 22, 1987, by Megaforce Records in the US and by Island Records in the rest of the world. The album is dedicated to Cliff Burton of Metallica, who died in a bus accident six months before its release while on tour with Anthrax as the opening act."
+        }
+    ]
+}

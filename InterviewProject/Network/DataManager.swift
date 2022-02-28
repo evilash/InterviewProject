@@ -1,5 +1,5 @@
 //
-//  GIFManager.swift
+//  DataManager.swift
 //  ColorSwitcher
 //
 //  Created by Matt M Smith on 9/28/20.
@@ -8,12 +8,12 @@
 import Combine
 import Foundation
 
-struct NetworkManager {
-    typealias TenorResponsePublisher = AnyPublisher<TenorResponse, ProjectError>
+struct DataManager {
+    typealias TenorResponsePublisher = AnyPublisher<TenorResponse, GifError>
     
     static func fetchGif(from query: String) -> TenorResponsePublisher {
         guard let url = Tenor.url(with: query) else {
-            return Fail(error: ProjectError.gifUrlIsNil)
+            return Fail(error: GifError.urlIsNil)
                 .eraseToAnyPublisher()
         }
         
@@ -21,12 +21,19 @@ struct NetworkManager {
             .tryMap { response in
                 guard let httpUrlResponse = response.response as? HTTPURLResponse,
                       httpUrlResponse.statusCode == 200 else {
-                    throw ProjectError.networkError
-                }
+                          throw GifError.networkError
+                      }
                 return response.data
             }
             .decode(type: TenorResponse.self, decoder: JSONDecoder())
-            .mapError { ProjectError.map($0) }
+            .mapError { GifError.map($0) }
             .eraseToAnyPublisher()
+    }
+    
+    func fetchAlbumInfo() -> MusicInfo.Albums? {
+        let decoder = JSONDecoder()
+        let musicInfo = decoder.getMusicInfo()
+        
+        return musicInfo?.albums
     }
 }

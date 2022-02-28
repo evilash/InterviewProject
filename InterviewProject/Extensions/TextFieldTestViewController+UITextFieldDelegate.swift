@@ -19,7 +19,6 @@ extension TextFieldTestViewController: UITextFieldDelegate {
         let buttonState = text.count >= 4
         
         submitButton.isEnabled = buttonState
-        partThreeButton.isHidden = !buttonState
         
         return true
     }
