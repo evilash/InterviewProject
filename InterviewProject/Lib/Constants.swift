@@ -22,6 +22,19 @@ struct Constants {
         static let submitButton = "submitButton"
     }
     
+    struct Cell {
+        static let id = "AlbumCell"
+    }
+    
+    struct DetailsView {
+        static let id = "AlbumDetails"
+    }
+    
+    struct File {
+        static let albums = "albums"
+        static let json = "json"
+    }
+    
     struct GifTitle {
         static let techDifficulties = "Technical Difficulties!"
         static let emptyTitle = "The title is empty"
@@ -33,7 +46,7 @@ struct Constants {
     }
     
     struct NavTitle {
-        static let viewController = "Color Switch"
+        static let tableController = "Album Test"
         static let textFieldTest = "Snap!"
         static let gifViewController = "Gif View"
     }

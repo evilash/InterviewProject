@@ -11,11 +11,11 @@ import Foundation
 class TenorManager: ObservableObject {
     @Published var model: GIFModel
     
-    private let response: NetworkManager.TenorResponsePublisher
+    private let response: DataManager.TenorResponsePublisher
     private var cancellable: AnyCancellable?
     
     init(with query: String) {
-        response = NetworkManager.fetchGif(from: query)
+        response = DataManager.fetchGif(from: query)
         model = GIFModel(title: Constants.Strings.empty, url: Constants.Strings.empty)
     }
     
