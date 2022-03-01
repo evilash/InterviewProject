@@ -25,7 +25,6 @@
 		4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC41186252268DF00F85D32 /* GIFViewController.swift */; };
 		53C78A337A4A4FCC3A1C696D /* Pods_InterviewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */; };
 		C90718B427C5E79E00BCD956 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90718B327C5E79E00BCD956 /* AlbumListViewController.swift */; };
-		C90955D0263B34A4002D8A92 /* Tenor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90955CF263B34A4002D8A92 /* Tenor.swift */; };
 		C93485E02522FC2400E79988 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485DF2522FC2400E79988 /* DataManager.swift */; };
 		C93485E2252305D500E79988 /* TenorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93485E1252305D500E79988 /* TenorResponse.swift */; };
 		C95EB5E8257E0181009ED293 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95EB5E7257E0181009ED293 /* UIViewController+extension.swift */; };
@@ -63,7 +62,6 @@
 		4EC41186252268DF00F85D32 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		6C80E432D5394F6084E69272 /* Pods_InterviewProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90718B327C5E79E00BCD956 /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
-		C90955CF263B34A4002D8A92 /* Tenor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenor.swift; sourceTree = "<group>"; };
 		C93485DF2522FC2400E79988 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C93485E1252305D500E79988 /* TenorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenorResponse.swift; sourceTree = "<group>"; };
 		C95EB5E7257E0181009ED293 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
@@ -97,6 +95,41 @@
 				4EAE73DE24A4660600A20BC9 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4E5BE5FE27CD535B00ABBA35 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4E1C9DA627C853530074684B /* MusicManager.swift */,
+				C9B261DF27CAC01900D429B7 /* Music.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4E5BE5FF27CD536E00ABBA35 /* Tenor */ = {
+			isa = PBXGroup;
+			children = (
+				4EA189B625C87EAD00A5CD1B /* TenorManager.swift */,
+				4EB4EA8C264AF5DF004A54D9 /* TenorSetup.swift */,
+			);
+			path = Tenor;
+			sourceTree = "<group>";
+		};
+		4E5BE60027CD546D00ABBA35 /* Tenor */ = {
+			isa = PBXGroup;
+			children = (
+				C93485E1252305D500E79988 /* TenorResponse.swift */,
+				4E131E6E25B8F80900691B41 /* GIFModel.swift */,
+			);
+			path = Tenor;
+			sourceTree = "<group>";
+		};
+		4E5BE60127CD547900ABBA35 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4E6C139E27C7045B00DCAF32 /* MusicInfo.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		4E6C139B27C7029D00DCAF32 /* json */ = {
@@ -189,9 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				4E6C139B27C7029D00DCAF32 /* json */,
-				C93485E1252305D500E79988 /* TenorResponse.swift */,
-				4E131E6E25B8F80900691B41 /* GIFModel.swift */,
-				4E6C139E27C7045B00DCAF32 /* MusicInfo.swift */,
+				4E5BE60027CD546D00ABBA35 /* Tenor */,
+				4E5BE60127CD547900ABBA35 /* Music */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,12 +231,9 @@
 		C9366FED25B7CFA7001EEDE4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4E5BE5FE27CD535B00ABBA35 /* Music */,
+				4E5BE5FF27CD536E00ABBA35 /* Tenor */,
 				C93485DF2522FC2400E79988 /* DataManager.swift */,
-				4EA189B625C87EAD00A5CD1B /* TenorManager.swift */,
-				C90955CF263B34A4002D8A92 /* Tenor.swift */,
-				4EB4EA8C264AF5DF004A54D9 /* TenorSetup.swift */,
-				4E1C9DA627C853530074684B /* MusicManager.swift */,
-				C9B261DF27CAC01900D429B7 /* Music.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -363,7 +392,6 @@
 				C9B261DE27CA1D0E00D429B7 /* UIAlertAction+extensions.swift in Sources */,
 				C90718B427C5E79E00BCD956 /* AlbumListViewController.swift in Sources */,
 				4E1C9DA727C853530074684B /* MusicManager.swift in Sources */,
-				C90955D0263B34A4002D8A92 /* Tenor.swift in Sources */,
 				4E6C139F27C7045B00DCAF32 /* MusicInfo.swift in Sources */,
 				4EB4EA8D264AF5DF004A54D9 /* TenorSetup.swift in Sources */,
 				4EC41187252268DF00F85D32 /* GIFViewController.swift in Sources */,

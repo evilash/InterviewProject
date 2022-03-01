@@ -8,13 +8,13 @@
 import Foundation
 
 extension JSONDecoder {
-    func getMusicInfo() -> MusicInfo? {
-        guard let url = Music.url,
+    func getDecodedData<T: Decodable>(from url: URL?, codableType: T) -> T? {
+        guard let url = url,
               let data = try? Data(contentsOf: url),
-              let musicInfo = try? decode(MusicInfo.self, from: data) else {
+              let decodedData = try? decode(T.self, from: data) else {
                   return nil
               }
         
-        return musicInfo
+        return decodedData
     }
 }

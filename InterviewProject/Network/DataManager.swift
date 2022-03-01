@@ -12,7 +12,7 @@ struct DataManager {
     typealias TenorResponsePublisher = AnyPublisher<TenorResponse, GifError>
     
     static func fetchGif(from query: String) -> TenorResponsePublisher {
-        guard let url = Tenor.url(with: query) else {
+        guard let url = TenorSetup.url(with: query) else {
             return Fail(error: GifError.urlIsNil)
                 .eraseToAnyPublisher()
         }
@@ -32,7 +32,7 @@ struct DataManager {
     
     func fetchAlbumInfo() -> MusicInfo.Albums? {
         let decoder = JSONDecoder()
-        let musicInfo = decoder.getMusicInfo()
+        let musicInfo = decoder.getDecodedData(from: Music.url, codableType: MusicInfo())
         
         return musicInfo?.albums
     }
