@@ -11,12 +11,16 @@ This project was created to help evaluate your XCUITest skills. Please clone the
 ## Setup
 To be able to test one of the views in the project, you'll need to go and get an API key from Tenor. It's a really easy process and should only take a minute. Please go to this [link](https://tenor.com/gifapi/documentation#quickstart-setup) for instructions.
 
-Once you have your API key, you'll now need to add it to the project. Please go to the file named "TenorSetup" and add your API key to the stored property named "apiKey". The last thing you'll need to do is rename the "TenorSetup" struct to "Tenor". Now you should be all setup and ready to go.
+Once you have your API key, you'll now need to add it to the project. Please go to the file named "TenorSetup" and add your API key to the stored property named "apiKey". Now you should be all setup and ready to go.
 
 ## Instructions
-You'll notice the app has three views. Please write tests for all three of them. Do not push changes back up to the repo. We will go over your tests during the interview.
+You'll notice the app has multiple views. Please write tests for all of them. Do not push changes back up to the repo. We will go over your tests during the interview.
 
 ## Bonus Points
 1. Fix the warnings displayed in Xcode
-2. Can't interact with a control? Can you figure out why?
-3. Is it possible to add unit tests? If yes; do you want to try adding them? 
+2. Can you add constraints to the views that need them?
+3. Can't interact with a control? Can you figure out why?
+4. Is it possible to add unit tests? If yes; do you want to try adding them?
+
+## Misc
+I got the album description in the json file from wikipedia. I'm just wanting to give credit where it is due.

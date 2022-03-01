@@ -7,15 +7,14 @@
 
 import Foundation
 
-/*
-    I got the description info in the json file from wikipedia.
-    I'm just wanting to give credit where it is due.
-*/
-
 struct MusicInfo: Decodable {
     typealias Albums = [Album]
     
     let albums: Albums
+    
+    init() {
+        albums = []
+    }
 }
 
 struct Album: Decodable {
