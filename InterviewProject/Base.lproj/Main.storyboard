@@ -105,6 +105,15 @@
                                 <rect key="frame" x="79" y="146" width="257" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujx-Zj-aPJ">
+                                <rect key="frame" x="170" y="523" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="X2N-bv-Ed7" eventType="touchUpInside" id="7yn-fr-YlS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nLk-7J-xy8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -112,6 +121,7 @@
                     <tabBarItem key="tabBarItem" title="Image Test" id="gO5-J3-I0K"/>
                     <navigationItem key="navigationItem" id="MsN-Aq-l8a"/>
                     <connections>
+                        <outlet property="clearButton" destination="Ujx-Zj-aPJ" id="CHv-BV-oBi"/>
                         <outlet property="imageView" destination="EB2-VG-eCd" id="yXO-MO-7th"/>
                         <outlet property="submitButton" destination="lsj-2L-dpo" id="IHf-iL-dZ3"/>
                         <outlet property="textField" destination="Pgp-HS-bLJ" id="p5m-kV-z2U"/>
@@ -176,6 +186,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kvh-hF-P19" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ekd-mn-iAw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
