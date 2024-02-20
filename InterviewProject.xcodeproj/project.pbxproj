@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		4E6C139F27C7045B00DCAF32 /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C139E27C7045B00DCAF32 /* MusicInfo.swift */; };
 		4E915D122652EC330063CEDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E915D112652EC330063CEDA /* Constants.swift */; };
 		4EA189B725C87EAD00A5CD1B /* TenorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA189B625C87EAD00A5CD1B /* TenorManager.swift */; };
+		4EAC1A782B853744009D032A /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC1A772B853744009D032A /* Animate.swift */; };
 		4EAE73DD24A4660600A20BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE73DC24A4660600A20BC9 /* AppDelegate.swift */; };
 		4EAE73DF24A4660600A20BC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE73DE24A4660600A20BC9 /* SceneDelegate.swift */; };
 		4EAE73E424A4660600A20BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE73E224A4660600A20BC9 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		4E6C139E27C7045B00DCAF32 /* MusicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
 		4E915D112652EC330063CEDA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4EA189B625C87EAD00A5CD1B /* TenorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenorManager.swift; sourceTree = "<group>"; };
+		4EAC1A772B853744009D032A /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		4EAE73D924A4660600A20BC9 /* InterviewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE73DC24A4660600A20BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EAE73DE24A4660600A20BC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				C98866E725302CC000E6D67D /* Alert.swift */,
 				4E915D112652EC330063CEDA /* Constants.swift */,
 				C9E5F52527CCB20D0056B008 /* Accessibility.swift */,
+				4EAC1A772B853744009D032A /* Animate.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				C9E5F52627CCB20D0056B008 /* Accessibility.swift in Sources */,
 				C99495E52530185D00CCE2C4 /* GifError.swift in Sources */,
 				4EAE73DF24A4660600A20BC9 /* SceneDelegate.swift in Sources */,
+				4EAC1A782B853744009D032A /* Animate.swift in Sources */,
 				4E694BA924A4FFD200601F40 /* TextFieldTestViewController.swift in Sources */,
 				C9A5B72427C75FCD003C130F /* AlbumDetailsViewController.swift in Sources */,
 				C9B261DE27CA1D0E00D429B7 /* UIAlertAction+extensions.swift in Sources */,
