@@ -8,10 +8,6 @@
 import Foundation
 
 struct Constants {
-    struct Strings {
-        static let empty = ""
-    }
-    
     struct AccessibilityId {
         static let yellowButton = "yellowButton"
         static let greenButton = "greenButton"
