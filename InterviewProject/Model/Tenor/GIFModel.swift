@@ -10,5 +10,10 @@ import Foundation
 
 struct GIFModel {
     let title: String
-    let url: String    
+    let url: String
+
+    init(title: String? = nil, url: String? = nil) {
+        self.title = title ?? ""
+        self.url = url ?? ""
+    }
 }

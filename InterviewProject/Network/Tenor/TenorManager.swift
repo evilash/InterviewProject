@@ -16,7 +16,7 @@ class TenorManager: ObservableObject {
     
     init(with query: String) {
         response = DataManager.fetchGif(from: query)
-        model = GIFModel(title: "", url: "")
+        model = GIFModel()
     }
     
     func fetchModel() {
@@ -30,9 +30,9 @@ class TenorManager: ObservableObject {
                     Alert.display(withMessage: error, vc: GIFViewController())
                 }
             } receiveValue: { response in
-                let results = response.results.first
-                let title = results?.title ?? ""
-                let url = results?.media.first?.gif.url ?? ""
+                let result = response.results.first
+                let title = result?.title
+                let url = result?.media.first?.gif.url
                 self.model = GIFModel(title: title, url: url)
             }
     }
