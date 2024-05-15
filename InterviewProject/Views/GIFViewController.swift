@@ -6,7 +6,7 @@
 //
 
 import Combine
-import SwiftyGif
+//import SwiftyGif
 import UIKit
 
 class GIFViewController: UIViewController {
@@ -58,7 +58,7 @@ class GIFViewController: UIViewController {
         }
         
         gifTitle.text = model.title
-        gifImageView.setGifFromURL(url)
+//        gifImageView.setGifFromURL(url)
     }
     
     private func log(title text: String) {
